@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Vos ❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .carta {
+            background: white;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(0);
+            animation: aparecer 1s forwards ease-in-out;
+        }
+        @keyframes aparecer {
+            from { transform: scale(0); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            color: #e91e63;
+        }
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+        .boton {
+            margin-top: 20px;
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .boton:hover {
+            background: #c2185b;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="musica" autoplay loop>
+        <source src="tu-cancion.mp3" type="audio/mp3">
+    </audio>
+    <div class="carta">
+        <h1>Para Vos ❤️</h1>
+        <p>Todo lo que nos pasó me lleva a aferrarme a la idea de que el destino existe. Me hace pensar que siempre estuvo escrito el hecho de que nuestras vidas tenían que cruzarse.</p>
+        <p>Quiero pedirte perdón por haberte hecho esperar tanto, pero hoy estoy seguro de que quiero estar con vos. No me imagino mi vida sin vos a mi lado y no es el único aspecto en el que me siento seguro, sino que vos me hacés sentir seguro en todo sentido.</p>
+        <p>Me encanta que podamos disfrutar de cualquier cosa que hagamos juntos y que necesitamos muy poco para pasarla bien. Me encanta tu sencillez y que seas una persona firme con los pies sobre la tierra. Me encanta que seas tan atenta y buena conmigo. Me encanta que tengas personalidad, sos una persona con mucho carácter y poder de decisión.</p>
+        <p>Me emociona pensar en todo lo que podemos vivir juntos, en soñar y planificar nuestro futuro, en compartir momentos y estar el uno para el otro.</p>
+        <p>Quiero que sepas que SIEMPRE vas a poder contar conmigo. Para lo que sea, podés contar conmigo.</p>
+        <p>No tengo dudas de que sos el amor de mi vida y por eso quiero que nos acompañemos por el resto de nuestras vidas.</p>
+        <p>Te amo tanto, Dana.</p>
+    </div>
+</body>
+</html>
