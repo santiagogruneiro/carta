@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Vos ❤️</title>
+    <title>Para Dana ❤️</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
             background-color: #fce4ec;
             font-family: 'Courier New', Courier, monospace;
+            box-sizing: border-box;
         }
         .carta {
             background: white;
             padding: 20px;
-            width: 80%;
+            width: 90%;
             max-width: 500px;
             text-align: center;
             border-radius: 10px;
@@ -36,6 +39,13 @@
         p {
             font-size: 18px;
             color: #444;
+            word-wrap: break-word;
+        }
+        .firma {
+            margin-top: 20px;
+            font-size: 16px;
+            font-style: italic;
+            color: #666;
         }
         .boton {
             margin-top: 20px;
@@ -47,12 +57,24 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background 0.3s;
+            width: 100%;
+            max-width: 300px;
         }
         .boton:hover {
             background: #c2185b;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(
+                ()=>{
+                    window.scrollTo(0, 0);
+                },
+                500
+            )
+        });
+    </script>
 </head>
 <body>
     <audio id="musica" autoplay loop>
@@ -73,8 +95,9 @@
         <p>No hay un sólo día, momento, minuto, en el que no piense en vos. Quiero que sepas que estoy completamente enamorado de vos.</p>
         <p>Me emociona pensar en todo lo que podemos vivir juntos, en soñar y planificar nuestro futuro, en compartir momentos y estar el uno para el otro.</p>
         <p>Quiero que sepas que SIEMPRE vas a poder contar conmigo. Para lo que sea, podés contar conmigo.</p>
-        <p>No tengo dudas de que sos el amor de mi vida y nada me va a sacar la seguridad de que quiero que estemos juntos por el resto de nustras vidas.</p>
+        <p>No tengo dudas de que sos el amor de mi vida y nada me va a sacar la seguridad de que quiero que estemos juntos por el resto de nuestras vidas.</p>
         <p>Te amo tanto, Dana.</p>
+        <p class="firma">Con todo mi amor,<br>Santi<br><br>23 de febrero de 2025</p>
     </div>
 </body>
 </html>
